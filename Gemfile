@@ -1,11 +1,10 @@
 source "https://rubygems.org"
 
-ruby "2.3.1"
+ruby "2.4.0"
 
 gem "autoprefixer-rails"
 gem "delayed_job_active_record"
 gem "flutie"
-gem "honeybadger"
 gem "jquery-rails"
 gem "normalize-rails", "~> 3.0.0"
 gem "pg"
@@ -15,7 +14,6 @@ gem "rails", "~> 5.0.0"
 gem "recipient_interceptor"
 gem "sass-rails", "~> 5.0"
 gem "simple_form"
-gem "skylight"
 gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
 gem "suspenders"
@@ -37,7 +35,7 @@ group :development, :test do
   gem "factory_girl_rails"
   gem "pry-byebug"
   gem "pry-rails"
-  gem "rspec-rails", "~> 3.5.0.beta4"
+  gem "rspec-rails", "~> 3.5.0"
 end
 
 group :development, :staging do

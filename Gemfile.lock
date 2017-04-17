@@ -107,7 +107,6 @@ GEM
       activesupport (>= 4.2.0)
     hashdiff (0.3.2)
     high_voltage (2.4.0)
-    honeybadger (3.1.1)
     i18n (0.8.1)
     jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
@@ -225,8 +224,6 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.0)
-    skylight (1.2.0)
-      activesupport (>= 3.0.0)
     slop (3.6.0)
     spring (2.0.1)
       activesupport (>= 4.2)
@@ -291,7 +288,6 @@ DEPENDENCIES
   flutie
   formulaic
   high_voltage
-  honeybadger
   jquery-rails
   launchy
   listen
@@ -308,12 +304,11 @@ DEPENDENCIES
   rails_stdout_logging
   recipient_interceptor
   refills
-  rspec-rails (~> 3.5.0.beta4)
+  rspec-rails (~> 3.5.0)
   sass-rails (~> 5.0)
   shoulda-matchers
   simple_form
   simplecov
-  skylight
   spring
   spring-commands-rspec
   sprockets (>= 3.0.0)
@@ -326,7 +321,7 @@ DEPENDENCIES
   webmock
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.4.0p0
 
 BUNDLED WITH
-   1.13.1
+   1.14.6
