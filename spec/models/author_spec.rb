@@ -8,4 +8,8 @@ RSpec.describe Author, type: :model do
     it { should validate_presence_of(:email) }
     it { should validate_uniqueness_of(:email) }
   end
+
+  describe "associations" do
+    it { should have_and_belong_to_many(:commits) }
+  end
 end

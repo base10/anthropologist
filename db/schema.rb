@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170419024840) do
+ActiveRecord::Schema.define(version: 20170419034600) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,6 +20,23 @@ ActiveRecord::Schema.define(version: 20170419024840) do
     t.string   "email",      null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "authors_commits", id: false, force: :cascade do |t|
+    t.integer "author_id", null: false
+    t.integer "commit_id", null: false
+    t.index ["author_id"], name: "index_authors_commits_on_author_id", using: :btree
+    t.index ["commit_id"], name: "index_authors_commits_on_commit_id", using: :btree
+  end
+
+  create_table "commits", force: :cascade do |t|
+    t.string   "reference",       null: false
+    t.string   "title"
+    t.string   "file_statistics"
+    t.integer  "repository_id",   null: false
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.index ["repository_id"], name: "index_commits_on_repository_id", using: :btree
   end
 
   create_table "delayed_jobs", force: :cascade do |t|
@@ -45,4 +62,7 @@ ActiveRecord::Schema.define(version: 20170419024840) do
     t.datetime "updated_at", null: false
   end
 
+  add_foreign_key "authors_commits", "authors"
+  add_foreign_key "authors_commits", "commits"
+  add_foreign_key "commits", "repositories"
 end

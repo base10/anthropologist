@@ -1,4 +1,17 @@
+require 'securerandom'
+
 FactoryGirl.define do
+  trait :random_hash do
+    SecureRandom.hex(20) # Will yield a 40 character string
+  end
+
+  factory :commit do
+    reference random_hash
+    title "This is a meaningful commit message"
+    file_statistics "1 file changed, 1 insertion(+), 1 deletion(-)"
+    repository
+  end
+
   factory :author do
     name "Jane Committer"
     sequence(:email) { |n| "j.committer+#{n}@example.com" }
