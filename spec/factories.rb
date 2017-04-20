@@ -9,6 +9,7 @@ FactoryGirl.define do
     reference random_hash
     title "This is a meaningful commit message"
     file_statistics "1 file changed, 1 insertion(+), 1 deletion(-)"
+    author_datetime 1.day.ago
     repository
   end
 

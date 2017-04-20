@@ -4,6 +4,7 @@ class CreateCommits < ActiveRecord::Migration[5.0]
       t.string :reference, null: false, unique: true
       t.string :title
       t.string :file_statistics
+      t.datetime :author_datetime
       t.references :repository, foreign_key: true, null: false
 
       t.timestamps

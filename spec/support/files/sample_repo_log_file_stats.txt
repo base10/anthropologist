@@ -1,0 +1,163 @@
+80436e8
+2	0	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+c804511
+14	11	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+23b08fa
+1	1	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+a91ced7
+15	20	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+1e3cf79
+3	3	app/controllers/vital_book_controller.rb
+
+0ef7afc
+1	1	lib/vst_models
+
+4c1ef08
+4	4	app/controllers/vital_book_controller.rb
+
+6e198a4
+1	1	lib/vst_models
+
+00879fd
+5	2	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+34243eb
+1	1	lib/tasks/system_users_bulk_update.rake
+
+c064fa3
+1	1	config/schedule.rb
+2	2	lib/tasks/resque_queue_size_checker.rake
+
+e0f9424
+21	18	lib/tasks/system_users_bulk_update.rake
+
+c4c95b3
+9	0	lib/tasks/system_users_bulk_update.rake
+
+7a89e4d
+31	16	lib/tasks/system_users_bulk_update.rake
+
+85217d6
+6	2	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+fe4e5b0
+1	1	lib/vst_models
+
+3a92eb2
+11	0	app/models/phoenix_mailer.rb
+25	0	app/views/phoenix_mailer/bulk_system_user_update_report.html.erb
+66	0	lib/tasks/system_users_bulk_update.rake
+
+f6601e0
+1	1	lib/vst_models
+
+e77b2ba
+1	1	lib/vst_models
+
+dd269c5
+1	1	config/schedule.rb
+2	2	lib/tasks/resque_queue_size_checker.rake
+
+452c8e5
+3	2	app/jobs/hipchat_alert_job.rb
+10	5	config/external.yml
+1	1	config/initializers/notifications.rb
+
+83b7ca2
+3	3	lib/tasks/system_users_api_audit.rake
+
+2516058
+1	1	lib/tasks/system_users_api_audit.rake
+
+78efaf8
+4	3	lib/tasks/system_users_api_audit.rake
+
+be00029
+1	1	lib/tasks/system_users_api_audit.rake
+
+c7e19e1
+38	0	lib/tasks/system_users_api_audit.rake
+
+5d1aace
+11	1	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+32c8b48
+2	3	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+44ab628
+1	1	app/views/system_user/_list.html.erb
+
+79b2d67
+1	1	Gemfile.lock
+
+20e0ca3
+1	1	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+0f2db92
+1	1	lib/vst_models
+
+cc5a8d4
+1	1	lib/vst_models
+
+cbdd320
+27	0	lib/tasks/create_price_records_for_assets_with_dlp.rake
+
+c4c48a2
+1	1	app/models/asset_create_update.rb
+
+7ee9569
+1	0	app/views/system_user/_api_status.html.erb
+
+8cf67c0
+9	5	app/views/system_user/_api_status.html.erb
+
+fd730d2
+-	-	test/files/uploads/bulk_asset_create_with_valid_fields.xls
+1	1	test/unit/asset_create_update_test.rb
+
+7fd6a00
+1	1	app/controllers/vital_book_controller.rb
+
+9348efb
+1	1	app/views/phoenix_mailer/basic_price_errors.html.erb
+
+288815d
+1	1	app/assets/stylesheets/screen.css.erb
+1	1	app/controllers/system_user_controller.rb
+1	1	app/views/layouts/application.html.erb
+1	1	app/views/system_user/_api_status.html.erb
+12	12	app/views/system_user/show.html.erb
+0	1	config/routes.rb
+
+5d2f2bc
+1	1	app/controllers/user_controller.rb
+3	2	config/initializers/notifications.rb
+
+f51ed01
+1	0	app/views/maintenance_routines/choose.html.erb
+
+da40858
+1	1	Gemfile.lock
+
+13c87ec
+1	1	lib/vst_models
+
+38ea1d9
+72	27	app/jobs/basic_price_validation_job.rb
+
+e88df25
+1	1	app/models/phoenix_mailer.rb
+5	5	config/hosts.yml
+
+86baaa3
+1	13	test/functional/system_user_controller_test.rb
+
+cd4fdb0
+5	2	app/jobs/basic_price_validation_job.rb
+
+cadf57c
+22	0	test/functional/system_user_controller_test.rb

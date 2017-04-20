@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Author, type: :model do
-  describe "validations" do
-    subject { FactoryGirl.create(:author) }
+  subject { FactoryGirl.create(:author) }
 
+  describe "validations" do
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:email) }
     it { should validate_uniqueness_of(:email) }

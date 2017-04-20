@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 20170419034600) do
     t.string   "reference",       null: false
     t.string   "title"
     t.string   "file_statistics"
+    t.datetime "author_datetime"
     t.integer  "repository_id",   null: false
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
