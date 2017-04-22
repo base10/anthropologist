@@ -32,7 +32,7 @@ class GitLogImporter
     commit.save!
   end
 
-  def map_line_to_segments(line: line)
+  def map_line_to_segments(line:)
     parts = line.split('|')
 
     MappedResult.new(
