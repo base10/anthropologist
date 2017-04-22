@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require reveal
+//= require reveal/lib/js/head.min
+//= require reveal/plugins/notes/notes
 
 //= require_tree .
