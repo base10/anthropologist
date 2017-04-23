@@ -1,0 +1,12 @@
+[
+    { from: ['blake@blakeperdue.com'], to: 'blake@perdue.me' },
+    { from: ['xrskershaw@gmail.com', ckershaw@nc.rr.com'], to: 'chris.kershaw@ingramcontent.com' }
+    { from: ['dave@BOML202100.home', 'dave@BOML202100.local', 'dcampbell@vpg.com'], to: 'dave.campbell@ingramcontent.com' },
+    { from: ['erin.szarpa@ingramdigital.com'], to: 'erin.szarpa@ingramcontent.com' },
+    { from: ['manton@me.com', 'manton@riverfold.com'], to: 'manton.reece@ingramcontent.com' },
+    { from: ['mark.bennett.mail@gmail.com'], to: 'Mark.Bennett@ingramcontent.com' },
+    { from: ['github@philburrows.com', 'peburrows@gmail.com'], to: 'phil.burrows@ingramdigital.com' },
+    { from: ['plindo@raml202184.ingramcontent.com', 'plindo@RAML202184.local'], to: 'philabian.lindo@ingramcontent.com' },
+    { from: ['sibananda.kheti@synechron.com'], to: 'sibananda.kheti@ingramcontent.com' },
+    { from: ['srikanth@srikanths-mbp-2.ingramcontent.com'], to: 'srikanth@ingramcontent.com' }
+]
