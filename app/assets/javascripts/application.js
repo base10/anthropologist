@@ -15,5 +15,8 @@
 //= require reveal
 //= require reveal/lib/js/head.min
 //= require reveal/plugins/notes/notes
+//= require Chart.bundle
+//= require chartkick
+//= require charts/loader.js
 
 //= require_tree .

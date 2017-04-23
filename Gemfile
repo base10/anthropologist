@@ -3,8 +3,10 @@ source "https://rubygems.org"
 ruby "2.4.0"
 
 gem "autoprefixer-rails"
+gem "chartkick"
 gem "delayed_job_active_record"
 gem "flutie"
+gem 'groupdate'
 gem "jquery-rails"
 gem "normalize-rails", "~> 3.0.0"
 gem "pg"
