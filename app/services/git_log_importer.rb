@@ -46,10 +46,18 @@ class GitLogImporter
   end
 
   def handle_author_data(mapped_result:)
-    Author.find_or_create_by!(
-      email: mapped_result.author_email,
-      name: mapped_result.author_name
-    )
+    author = Author.find_by(email: mapped_result.author_email)
+
+    unless author.present?
+      author = Author.new(
+        email: mapped_result.author_email,
+        name: mapped_result.author_name
+      )
+
+      author.save!
+    end
+
+    author
   end
 
   class MappedResult < OpenStruct
