@@ -1,0 +1,17 @@
+# Console
+Repository.new(name: 'vitalsource/phoenix', url: 'https://github.com/vitalsource/phoenix', local_path: '/Users/nathan/code/vitalsource/phoenix').save
+Repository.new(name: 'vitalsource/p2services', url: 'https://github.com/vitalsource/p2services', local_path: '/Users/nathan/code/vitalsource/p2services').save
+Repository.new(name: 'vitalsource/jiffy', url: 'https://github.com/vitalsource/jiffy', local_path: '/Users/nathan/code/vitalsource/jiffy').save
+Repository.new(name: 'vitalsource/vst-models', url: 'https://github.com/vitalsource/vst-models', local_path: '/Users/nathan/code/vitalsource/vst-models').save
+Repository.new(name: 'vitalsource/reporter', url: 'https://github.com/vitalsource/reporter', local_path: '/Users/nathan/code/vitalsource/reporter').save
+Repository.new(name: 'vitalsource/uber-reporter', url: 'https://github.com/vitalsource/uber-reporter', local_path: '/Users/nathan/code/vitalsource/uber-reporter').save
+Repository.new(name: 'vitalsource/goose', url: 'https://github.com/vitalsource/goose', local_path: '/Users/nathan/code/vitalsource/goose').save
+
+# Shell
+scripts/import_data_log.rb 'vitalsource/phoenix' ~/Dropbox/Documents/presentations/2017-railsconf-proposals/vst-import-data/phoenix-data-log-cleaned.txt
+scripts/import_data_log.rb 'vitalsource/p2services' ~/Dropbox/Documents/presentations/2017-railsconf-proposals/vst-import-data/p2services-data-log-cleaned.txt
+scripts/import_data_log.rb 'vitalsource/jiffy' ~/Dropbox/Documents/presentations/2017-railsconf-proposals/vst-import-data/jiffy-data-log-cleaned.txt
+scripts/import_data_log.rb 'vitalsource/vst-models' ~/Dropbox/Documents/presentations/2017-railsconf-proposals/vst-import-data/vst-models-data-log-cleaned.txt
+scripts/import_data_log.rb 'vitalsource/goose' ~/Dropbox/Documents/presentations/2017-railsconf-proposals/vst-import-data/goose-data-log-cleaned.txt
+scripts/import_data_log.rb 'vitalsource/reporter' ~/Dropbox/Documents/presentations/2017-railsconf-proposals/vst-import-data/reporter-data-log-cleaned.txt
+scripts/import_data_log.rb 'vitalsource/uber-reporter' ~/Dropbox/Documents/presentations/2017-railsconf-proposals/vst-import-data/uber-reporter-data-log-cleaned.txt
