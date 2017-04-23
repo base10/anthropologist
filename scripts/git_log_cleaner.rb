@@ -5,12 +5,15 @@ file_lines = File.readlines(file_path)
 new_lines = []
 
 file_lines.each do |line|
-  parts = line.split('|')
-  file_stats = parts.last
-  file_stats.sub!(/^\s+/, '')
-  file_stats = "#{file_stats}"
-  new_lines << parts.join('|')
+  next if line.match('^$')
+
+  if line.match('\|')
+    new_lines << line.chomp
+    next
+  end
+
+  line.sub!(/^\s+/, '')
+  new_lines[-1] += line.chomp
 end
 
 puts new_lines
-

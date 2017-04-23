@@ -1,10 +1,10 @@
 # Git Log commands
 
-## Get 50 commits suitable for minor cleaning
+## Get commits suitable for minor cleaning
 
 ```sh
-git log -50 --pretty=format:'%h|%an|%ae|%ai|%s|' \
-  --shortstat --no-merges | paste - - - > <FILE>
+git log --after='2005-07-01' --pretty=format:'%h|%an|%ae|%ai|%s|' \
+  --shortstat --no-merges > ~/Desktop/phoenix-data-log.txt
 ```
 
 I then follow that up with a run through `script/git_log_cleaner.rb` like so:
@@ -16,10 +16,11 @@ I then follow that up with a run through `script/git_log_cleaner.rb` like so:
 
 The next step from there will be running them through an importer.
 
-## Get 50 commits of file history
+## Get file history
 
 ```sh
-git log -50 --pretty=format:'%h' --numstat --no-merges
+git log --after='2005-07-01' --pretty=format:'%h' --numstat --no-merges \
+  > ~/Desktop/phoenix-file-log.txt
 ```
 
 From there, I should be able to directly import without further cleanup
