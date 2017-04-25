@@ -1,8 +1,13 @@
 <div class="reveal">
   <div class="slides">
-    <%= render partial: 'pages/slide1' %>
-    <%= render partial: 'pages/slide2' %>
-    <%= render partial: 'pages/slide3' %>
+
+    <% (1..3).each do |index| %>
+      <%= render partial: "pages/slide#{index}" %>
+    <% end %>
+
+    <% (0..9).each do |index| %>
+      <%= render partial: "pages/prologue_0#{index}" %>
+    <% end %>
 
     <%= render partial: 'pages/end_credits' %>
   </div>
