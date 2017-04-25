@@ -1,0 +1,16 @@
+<section>
+  <h2>Visualizing git commits</h2>
+
+  <p>
+    <%= line_chart commits_charts_path %>
+  </p>
+
+  <aside class="notes">
+    <ul>
+      <li>This comes from importing the commit data from a number of our applications</li>
+      <li>Made into pipe-delimited files from git log</li>
+      <li>Imported into a small Rails application</li>
+      <li>Using Chartkick to display</li>
+    </ul>
+  </aside>
+</section>

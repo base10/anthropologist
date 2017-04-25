@@ -1,0 +1,25 @@
+<section>
+  <h2>Exporting data</h2>
+
+<pre class='stretch'>
+<code>
+git log --after='2005-07-01' --pretty=format:'%h|%an|%ae|%ai|%s|' \
+  --shortstat --no-merges > ~/Desktop/phoenix-data-log.txt
+
+
+./scripts/git_log_cleaner.rb ~/Desktop/phoenix-data-log.txt \
+  > ~/Desktop/phoenix-data-log-cleaned.txt
+
+
+23b08fa|Graham Turner|turnertgraham@example.com|2017-04-11 15:52:15 -0400|updates description|1 file changed, 1 insertion(+), 1 deletion(-)
+a91ced7|Graham Turner|turnertgraham@gmail.com|2017-04-11 15:50:48 -0400|create asset level DLP's|1 file changed, 15 insertions(+), 20 deletions(-)
+1e3cf79|Erin Szarpa|erin.szarpa@example.com|2017-04-11 11:47:10 -0400|CON-3103 - don't require parameters that are not present|1 file changed, 3 insertions(+), 3 deletions(-)
+0ef7afc|Todd Edwards|todd.edwards@example.com|2017-04-11 10:17:39 -0400|Updating models|1 file changed, 1 insertion(+), 1 deletion(-)
+4c1ef08|Erin Szarpa|erin.szarpa@example.com|2017-04-10 17:19:35 -0400|CON-3103 - need to pass specific, permitted param hash to correctly create price records|1 file changed, 4 insertions(+), 4 deletions(-)
+6e198a4|Todd Edwards|todd.edwards@example.com|2017-04-10 17:01:35 -0400|Updating models|1 file changed, 1 insertion(+), 1 deletion(-)
+</code>
+</pre>
+
+  <aside class="notes">
+  </aside>
+</section>
