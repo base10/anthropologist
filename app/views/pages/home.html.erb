@@ -49,3 +49,13 @@
     <%= render partial: 'pages/end_thanks' %>
   </div>
 </div>
+
+<script>
+  if( window.location.search.match( /print-pdf/gi ) ) {
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = '<%= stylesheet_path("print/pdf") %>';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  }
+</script>

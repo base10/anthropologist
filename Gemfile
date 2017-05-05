@@ -33,11 +33,19 @@ group :development, :test do
   gem "awesome_print"
   gem "bullet"
   gem "bundler-audit", ">= 0.5.0", require: false
+  gem "capybara-webkit"
   gem "dotenv-rails"
   gem "factory_girl_rails"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.5.0"
+  gem "shoulda-matchers"
+
+  gem "formulaic"
+  gem "launchy"
+  gem "simplecov", require: false
+  gem "timecop"
+  gem "webmock"
 end
 
 group :development, :staging do
@@ -45,14 +53,7 @@ group :development, :staging do
 end
 
 group :test do
-  gem "capybara-webkit"
   gem "database_cleaner"
-  gem "formulaic"
-  gem "launchy"
-  gem "shoulda-matchers"
-  gem "simplecov", require: false
-  gem "timecop"
-  gem "webmock"
 end
 
 group :staging, :production do
