@@ -74,7 +74,7 @@ GEM
     capybara-webkit (1.14.0)
       capybara (>= 2.3.0, < 2.14.0)
       json
-    chartkick (2.2.3)
+    chartkick (3.4.0)
     coderay (1.1.1)
     concurrent-ruby (1.0.5)
     crack (0.4.3)
